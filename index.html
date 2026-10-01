@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of SJM - Crispy Chicharon Bagnet | Official Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sjmRed: '#b91c1c',
+                        sjmDarkRed: '#7f1d1d',
+                        sjmGold: '#f59e0b',
+                        sjmYellow: '#fef08a',
+                        sjmDark: '#0f172a',
+                        sjmCard: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Montserrat', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top center, #1e293b 0%, #0f172a 100%);
+        }
+        .glow-red {
+            box-shadow: 0 0 35px -5px rgba(185, 28, 28, 0.4);
+        }
+        .glow-gold {
+            box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-sjmDark text-slate-100 font-sans antialiased selection:bg-sjmGold selection:text-sjmDark">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-sjmDarkRed via-sjmRed to-sjmDarkRed text-white text-center py-2 px-4 text-xs sm:text-sm font-bold tracking-wider uppercase border-b border-sjmGold/40">
+        🔥 FRESHLY PREPARED DAILY • ORDERS & PRE-ORDERS ACCEPTED IN SAUYO, QUEZON CITY 🔥
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-sjmDark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Title -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="received_1905173300460904.jpeg" alt="House of SJM Official Logo" class="w-12 h-12 rounded-full border-2 border-sjmGold object-cover shadow-md transition-transform group-hover:scale-105">
+                <div>
+                    <span class="block font-heading font-black text-lg sm:text-xl tracking-tight text-white leading-none">HOUSE OF SJM</span>
+                    <span class="block text-xs font-bold text-sjmGold tracking-widest uppercase mt-0.5">CRISPY CHICHARON BAGNET</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#about" class="hover:text-sjmGold transition">About Us</a>
+                <a href="#menu" class="hover:text-sjmGold transition">Flavors & Menu</a>
+                <a href="#order-calc" class="hover:text-sjmGold transition">Order Calculator</a>
+                <a href="#contact" class="hover:text-sjmGold transition">Location & Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="#order-calc" class="bg-gradient-to-r from-sjmGold to-amber-500 hover:from-amber-500 hover:to-sjmGold text-sjmDark font-extrabold text-xs sm:text-sm px-4 sm:px-6 py-2.5 rounded-full shadow-lg shadow-sjmGold/20 transition transform active:scale-95 flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Order Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative hero-bg overflow-hidden py-16 sm:py-24 border-b border-slate-800">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-sjmRed/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-72 h-72 bg-sjmGold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sjmRed/20 border border-sjmRed/40 text-sjmYellow text-xs font-bold uppercase tracking-wider mb-6">
+                        <i class="fa-solid fa-fire text-sjmGold"></i>
+                        <span>Sauyo, Quezon City's Premium Choice</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-heading text-white tracking-tight leading-tight mb-4">
+                        "Lutong na Tatatak, <br class="hidden sm:inline">
+                        <span class="gold-gradient-text">Sarap na Babalikan!"</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed font-normal">
+                        Experience premium quality <strong class="text-white">Chicharon Bagnet</strong> crafted with a light, airy, and signature extra-crispy crunch. Perfect for snacks, gatherings, and family meals!
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="tel:09631005507" class="w-full sm:w-auto bg-sjmRed hover:bg-red-700 text-white font-bold text-base px-8 py-3.5 rounded-xl shadow-lg glow-red transition flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            <span>Call / Text: 0963-100-5507</span>
+                        </a>
+                        <a href="#menu" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-base px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                            <span>View Flavors</span>
+                            <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800 text-center lg:text-left">
+                        <div>
+                            <div class="text-xl sm:text-2xl font-black text-white">100%</div>
+                            <div class="text-xs text-slate-400">Crispy & Light Skin</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-black text-sjmGold">Strict</div>
+                            <div class="text-xs text-slate-400">Quality Control</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-black text-white">Sauyo, QC</div>
+                            <div class="text-xs text-slate-400">Pick-up & Pre-order</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Official Logo Badge) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-slate-800 to-sjmDark p-8 rounded-3xl border border-sjmGold/30 glow-gold text-center">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-sjmGold text-sjmDark font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                            Official Brand Seal
+                        </div>
+
+                        <div class="my-6 flex justify-center">
+                            <img src="received_1905173300460904.jpeg" alt="House of SJM Logo" class="w-48 h-48 rounded-full border-4 border-sjmGold object-cover shadow-2xl">
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-1">HOUSE OF SJM</h3>
+                        <p class="text-xs text-sjmGold font-semibold uppercase tracking-widest mb-4">Crispy Chicharon Bagnet</p>
+
+                        <div class="bg-sjmDark/80 p-4 rounded-xl border border-slate-700/60 text-xs text-slate-300 space-y-2 text-left">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-sjmGold"></i>
+                                <span>Original Savory Crunch Flavor</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-sjmGold"></i>
+                                <span>Spicy Chili Kick Flavor</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-sjmGold"></i>
+                                <span>Strict Quality & Hygiene Selection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / FOUNDERS SECTION -->
+    <section id="about" class="py-16 bg-sjmDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs font-extrabold text-sjmGold uppercase tracking-widest mb-2">Our Story & Founders</h2>
+                <p class="text-2xl sm:text-3xl font-black font-heading text-white">Behind House of SJM</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-sjmCard p-8 rounded-3xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-sjmGold mb-3">Our Story</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Founded in 2026 in Sauyo, Quezon City, House of SJM was born out of a passion for high-quality, ultra-crispy Chicharon Bagnet. Through strict quality standards, trusted local sourcing, and meticulous selection, House of SJM ensures that only premium-grade Chicharon Bagnet reaches your table.
+                    </p>
+                </div>
+
+                <div class="bg-sjmCard p-8 rounded-3xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-sjmGold mb-3">The Founders & Operators</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                        <strong>Christian V. Crisanto and Wife</strong>
+                    </p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        As a hands-on, husband-and-wife-run business, Christian and his wife personally manage, oversee, and operate House of SJM together. They ensure that every single batch is carefully inspected, packed, and prepared with utmost care and dedication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU / FLAVORS SECTION -->
+    <section id="menu" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-extrabold text-sjmGold uppercase tracking-widest block mb-2">Signature Flavors</span>
+                <h2 class="text-3xl font-black font-heading text-white">Chicharon Bagnet Selection</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-sjmCard rounded-3xl p-8 border border-slate-700/80 hover:border-sjmGold transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-4xl">🧄</span>
+                            <span class="bg-slate-800 text-sjmYellow text-xs font-bold px-3 py-1 rounded-full border border-slate-700">SAVORY & CLASSIC</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">ORIGINAL SAVORY CRUNCH</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            The classic, perfectly seasoned Chicharon Bagnet with an extra-crispy crunch loved by all ages.
+                        </p>
+                    </div>
+                    <a href="#order-calc" class="w-full bg-slate-800 hover:bg-sjmGold hover:text-sjmDark text-white font-bold text-center py-3 rounded-xl transition">
+                        Select in Order Calculator
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-sjmDarkRed/40 to-sjmCard rounded-3xl p-8 border border-sjmRed hover:border-red-500 transition relative overflow-hidden flex flex-col justify-between glow-red">
+                    <div class="absolute -right-8 -top-8 bg-sjmRed text-white text-[10px] font-black tracking-widest uppercase px-10 py-1 rotate-45 shadow-md">
+                        HOT & CRISPY
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-4xl">🌶️</span>
+                            <span class="bg-sjmRed text-white text-xs font-bold px-3 py-1 rounded-full uppercase">FIERY & BOLD</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">SPICY CHILI KICK</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Infused with a bold chili flavor profile, delivering the perfect balance of heat and savory goodness.
+                        </p>
+                    </div>
+                    <a href="#order-calc" class="w-full bg-sjmRed hover:bg-red-600 text-white font-bold text-center py-3 rounded-xl transition shadow-lg">
+                        Select in Order Calculator
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER CALCULATOR -->
+    <section id="order-calc" class="py-16 bg-sjmDark border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-sjmCard rounded-3xl p-6 sm:p-10 border border-sjmGold/40 glow-gold">
+                <div class="text-center mb-8">
+                    <span class="text-xs font-extrabold text-sjmGold uppercase tracking-widest block mb-1">Quick Order Helper</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white">Calculate Your Order</h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">1. Select Flavor</label>
+                        <select id="calcFlavor" onchange="calculateTotal()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm font-semibold focus:border-sjmGold focus:outline-none">
+                            <option value="Original Savory Crunch">🧄 Original Savory Crunch</option>
+                            <option value="Spicy Chili Kick">🌶️ Spicy Chili Kick</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">2. Select Pack Size</label>
+                        <select id="calcSize" onchange="calculateTotal()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm font-semibold focus:border-sjmGold focus:outline-none">
+                            <option value="150" data-price="150">Solo Pack (150g) - ₱150</option>
+                            <option value="280" data-price="280" selected>Regular Sharing Pack (250g) - ₱280</option>
+                            <option value="520" data-price="520">Family Pack (500g) - ₱520</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between bg-slate-900 p-4 rounded-xl border border-slate-800 mb-8">
+                    <span class="text-sm font-bold text-slate-200">Quantity:</span>
+                    <div class="flex items-center gap-4">
+                        <button onclick="adjustQty(-1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center">-</button>
+                        <span id="qtyDisplay" class="text-xl font-extrabold text-sjmGold w-8 text-center">1</span>
+                        <button onclick="adjustQty(1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center">+</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-sjmDarkRed to-slate-900 p-6 rounded-2xl border border-sjmRed/60 text-center mb-8">
+                    <span class="text-xs font-bold text-slate-300 uppercase tracking-widest block mb-1">Estimated Total</span>
+                    <div id="totalDisplay" class="text-4xl font-black text-sjmYellow">₱280</div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <a href="tel:09631005507" class="bg-sjmGold hover:bg-amber-500 text-sjmDark font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call to Order</span>
+                    </a>
+                    <a href="https://m.me/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-facebook-messenger text-lg"></i>
+                        <span>Order on Messenger</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section id="contact" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-extrabold text-sjmGold uppercase tracking-widest block mb-2">Get in Touch</span>
+                    <h2 class="text-3xl font-black font-heading text-white mb-6">Contact & Order Details</h2>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-sjmDark border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-sjmRed/20 text-sjmRed flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Location</h4>
+                                <p class="text-slate-300 text-sm mt-0.5">Sauyo, Quezon City, Metro Manila, Philippines</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-sjmGold/20 text-sjmGold border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-sjmGold/20 text-sjmGold flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Phone / Order Line</h4>
+                                <p class="text-sjmYellow font-black text-lg mt-0.5">0963-100-5507</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sjmCard p-8 rounded-3xl border border-slate-700 text-center">
+                    <img src="received_1905173300460904.jpeg" alt="House of SJM Logo" class="w-24 h-24 rounded-full border-2 border-sjmGold object-cover mx-auto mb-4 shadow-lg">
+                    <h3 class="text-2xl font-black text-white">HOUSE OF SJM</h3>
+                    <p class="text-xs font-bold text-sjmGold uppercase tracking-widest mb-4">Crispy Chicharon Bagnet</p>
+                    <p class="text-sm text-slate-300 italic mb-6">"Lutong na Tatatak, Sarap na Babalikan!"</p>
+                    <a href="tel:09631005507" class="inline-flex items-center justify-center gap-2 w-full bg-sjmRed hover:bg-red-700 text-white font-bold py-3 rounded-xl transition">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>0963-100-5507</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-sjmDark py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-semibold text-slate-400">HOUSE OF SJM • CRISPY CHICHARON BAGNET</p>
+            <p class="mt-1">Sauyo, Quezon City, Metro Manila • All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentQty = 1;
+
+        function adjustQty(amount) {
+            currentQty += amount;
+            if (currentQty < 1) currentQty = 1;
+            document.getElementById('qtyDisplay').innerText = currentQty;
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const sizeSelect = document.getElementById('calcSize');
+            const selectedOption = sizeSelect.options[sizeSelect.selectedIndex];
+            const unitPrice = parseInt(selectedOption.getAttribute('data-price')) || 280;
+            
+            const total = unitPrice * currentQty;
+            document.getElementById('totalDisplay').innerText = '₱' + total.toLocaleString();
+        }
+
+        calculateTotal();
+    </script>
+</body>
+</html>
