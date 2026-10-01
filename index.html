@@ -260,7 +260,7 @@
                 <div class="grid sm:grid-cols-2 gap-6 mb-8">
                     <div>
                         <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">1. Select Flavor</label>
-                        <select id="calcFlavor" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm font-semibold focus:border-sjmGold focus:outline-none">
+                        <select id="calcFlavor" onchange="calculateTotal()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm font-semibold focus:border-sjmGold focus:outline-none">
                             <option value="Original Savory Crunch">🧄 Original Savory Crunch</option>
                             <option value="Spicy Chili Kick">🌶️ Spicy Chili Kick</option>
                             <option value="Mixed Flavors">🔀 Mixed (For Bundles)</option>
@@ -278,9 +278,9 @@
                 <div class="flex items-center justify-between bg-slate-900 p-4 rounded-xl border border-slate-800 mb-8">
                     <span class="text-sm font-bold text-slate-200">Quantity / Sets:</span>
                     <div class="flex items-center gap-4">
-                        <button onclick="adjustQty(-1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center">-</button>
+                        <button type="button" onclick="adjustQty(-1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center cursor-pointer active:scale-95">-</button>
                         <span id="qtyDisplay" class="text-xl font-extrabold text-sjmGold w-8 text-center">1</span>
-                        <button onclick="adjustQty(1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center">+</button>
+                        <button type="button" onclick="adjustQty(1)" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-lg transition flex items-center justify-center cursor-pointer active:scale-95">+</button>
                     </div>
                 </div>
 
@@ -291,11 +291,11 @@
                 </div>
 
                 <div class="grid sm:grid-cols-2 gap-4">
-                    <a href="tel:09631005507" class="bg-sjmGold hover:bg-amber-500 text-sjmDark font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
+                    <a id="btnCall" href="tel:09631005507" class="bg-sjmGold hover:bg-amber-500 text-sjmDark font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call to Order</span>
                     </a>
-                    <a href="https://m.me/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
+                    <a id="btnMessenger" href="https://m.me/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg">
                         <i class="fa-brands fa-facebook-messenger text-lg"></i>
                         <span>Order on Messenger</span>
                     </a>
@@ -310,7 +310,4 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="text-xs font-extrabold text-sjmGold uppercase tracking-widest block mb-2">Get in Touch</span>
-                    <h2 class="text-3xl font-black font-heading text-white mb-6">Contact & Order Details</h2>
-
-                    <div class="space-y-6">
-         
+               
